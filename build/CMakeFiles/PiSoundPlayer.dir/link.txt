@@ -1,0 +1,1 @@
+/usr/bin/c++ -rdynamic CMakeFiles/PiSoundPlayer.dir/src/OscReceiver.cpp.o CMakeFiles/PiSoundPlayer.dir/src/main.cpp.o -o PiSoundPlayer  /usr/lib/x86_64-linux-gnu/libSDL2_mixer.so liboscpack.a /usr/lib/x86_64-linux-gnu/libSDL2main.a /usr/lib/x86_64-linux-gnu/libSDL2.so -lpthread 

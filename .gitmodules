@@ -1,0 +1,6 @@
+[submodule "cmake/sdl2"]
+	path = cmake/sdl2
+	url = git@github.com:aminosbh/sdl2-cmake-modules.git
+[submodule "oscpack"]
+	path = oscpack
+	url = git@github.com:RossBencina/oscpack.git
