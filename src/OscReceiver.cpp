@@ -20,18 +20,18 @@ void OscReceiver::ProcessMessage(const osc::ReceivedMessage& msg, const IpEndpoi
     {
         if (std::strcmp(msg.AddressPattern(), "/PiSoundPlayer/se/play") == 0)
         {
-            std::string asset_name = "assets/" + static_cast<std::string>(msg.ArgumentsBegin()->AsString());
+            std::string asset_name = "./assets/" + static_cast<std::string>(msg.ArgumentsBegin()->AsString());
             se = Mix_LoadWAV(asset_name.c_str());
-            if (!se)
+            if (se)
             {
                 if (Mix_PlayChannel(-1, se, 0) < 0)
                 {
-                    std::cerr << "Failed to play se: " << msg.ArgumentsBegin()->AsString() << std::endl;
+                    std::cerr << "Failed to play se: " << asset_name << std::endl;
                 }
             }
             else
             {
-                std::cerr << "Failed to load se file: " << msg.ArgumentsBegin()->AsString() << std::endl;
+                std::cerr << "Failed to load se file: " << asset_name << std::endl;
             }
         }
         else
