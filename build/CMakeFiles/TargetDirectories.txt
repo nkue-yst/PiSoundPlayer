@@ -1,4 +1,0 @@
-/home/yoshi/source/PiSoundPlayer/build/CMakeFiles/PiSoundPlayer.dir
-/home/yoshi/source/PiSoundPlayer/build/CMakeFiles/oscpack.dir
-/home/yoshi/source/PiSoundPlayer/build/CMakeFiles/edit_cache.dir
-/home/yoshi/source/PiSoundPlayer/build/CMakeFiles/rebuild_cache.dir
